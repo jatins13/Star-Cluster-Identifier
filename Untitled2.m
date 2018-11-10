@@ -84,4 +84,5 @@ for i=1:length(rcl)
     end
 end
 centre=[mean(x) mean(y)];  %centre of cluster
-RA=mean(X);Dec=mean(Y);      %Cluster's RA and DEC
+RA=mean(X);Dec=mean(Y);      %Cluster's centre RA and DEC 
+temp=4600.*(1./(0.92.*(b_v)+1.7)+1./(0.92.*(b_v)+0.62)); %temperature of every star
