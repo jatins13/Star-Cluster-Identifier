@@ -118,5 +118,6 @@ temp=4600.*(1./(0.92.*(b_v)+1.7)+1./(0.92.*(b_v)+0.62)); %temperature of every s
     %sequence of this cluster. turn off point is the point where [Fe/H] ratio
     %decay i.e main sequence stars convert to red dwarf region stars. On
     %average clusters age are nearly 1.2*10^10 years. formula to calculate age
-    %is main sequence lifetime=(10^10)*(M/(1.98847*10^30)).^(-2.5);
+    %is main sequence lifetime=(10^10)*(M/(1.98847*10^30)).^(-2.5);here
+    %10^10 years is age of sun
 %-------------------------------------------------------------------------%
