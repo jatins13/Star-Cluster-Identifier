@@ -69,7 +69,7 @@ hold on;
 contour(x1,x2,F);title('pmRA vs pmDEC');ylabel('pmRA(in mas/yr)');xlabel('pmDEC(in mas/yr)');
 hold off;
 figure;
-surf(x1,x2,F);figure; %normal distribution of stars based on proper motion 
+surf(x1,x2,F);title('predicted distribution function of stars according to proper motion');ylabel('pmRA');xlabel('pmDEC');figure; %normal distribution of stars based on proper motion 
 subplot(2,1,1);plot(rcl,pmra,'.');xlabel('rcl(deg)');ylabel('pmra mas/yr');subplot(2,1,2);plot(rcl,pmdec,'.');xlabel('rcl(deg)');ylabel('pmdec mas/yr');%plot of pmra vs angular distance of stars from cluster's center and pmdec vs angular distance  of stars from cluster's center
 x=[];y=[];
 e_xy=[];X=[];Y=[];
