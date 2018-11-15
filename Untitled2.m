@@ -109,8 +109,8 @@ for i=1:length(rcl)
        Y=[Y;dec(i)];
     end
 end
-centre=[mean(x) mean(y)];  %centre of cluster
-RA=mean(X);Dec=mean(Y);      %Cluster's centre RA and DEC
+centre=[mean(x) mean(y)];%centre of cluster
+RA=mean(X);Dec=mean(Y);%Cluster's centre RA and DEC
 temp=4600.*(1./(0.92.*(b_v)+1.7)+1./(0.92.*(b_v)+0.62)); %temperature of every star using theoritical formula in kelvin
 %-------------------------------------------------------------------------%
     %if mass was given then whose value is near to 0.08*Mass of sun age of star
@@ -120,4 +120,7 @@ temp=4600.*(1./(0.92.*(b_v)+1.7)+1./(0.92.*(b_v)+0.62)); %temperature of every s
     %average clusters age are nearly 1.2*10^10 years. formula to calculate age
     %is main sequence lifetime=(10^10)*(M/(1.98847*10^30)).^(-2.5);here
     %10^10 years is age of sun
+    %Tangential True velocity can be found out by using the proper motion
+    %and distance, and from that we can also find the radial velocity using pythagoreas theorem.
+    %Hence, we can find the true velocity of all the stars.
 %-------------------------------------------------------------------------%
