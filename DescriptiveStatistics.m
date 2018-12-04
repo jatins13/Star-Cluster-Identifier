@@ -78,16 +78,16 @@ boxplot(pmdecnorm);title('Boxplot of pmDEC with normalization');xlabel('Stars');
 figure;
 
 %Histograms--> 
-histogram(ra);
+histogram(ra);title('RA');xlabel('Intervals or Bins');ylabel('Frequency');
 figure;
-histogram(dec);
+histogram(dec);title('DEC');xlabel('Intervals or Bins');ylabel('Frequency');
 figure;
-histogram(pmra);
+histogram(pmra);title('pmRA');xlabel('Intervals or Bins');ylabel('Frequency');
 figure;
-histogram(pmdec);
+histogram(pmdec);title('pmDEC');xlabel('Intervals or Bins');ylabel('Frequency');
 
 %Multiple scatter plots
 figure;
-scatter([dec;pmdec],[ra;pmra],'.');title('Without normalization');
+scatter([dec;pmdec],[ra;pmra],'.');title('Without normalization');xlabel('DEC,pmDEC');ylabel('RA,pmRA');
 figure;
-scatter([decnorm;pmdecnorm],[ranorm;pmranorm],'.');title('With normalization');
+scatter([decnorm;pmdecnorm],[ranorm;pmranorm],'.');title('With normalization');xlabel('DEC,pmDEC');ylabel('RA,pmRA');
