@@ -91,21 +91,6 @@ contour(x1,x2,F);title('pmRA vs pmDEC');ylabel('pmRA(in mas/yr)');xlabel('pmDEC(
 hold off;
 figure;
 
-%Finding Centre of Cluster and Cluster's Center RA and DEC
-x=[];y=[];
-e_xy=[];X=[];Y=[];
-for i=1:length(rcl)
-    if rcl(i)==0
-       x=[x; pmra(i)];
-       y=[y ;pmdec(i)];
-       X=[X;ra(i)];
-       Y=[Y;dec(i)];
-    end
-end
-
-centre=[mean(x) mean(y)];  %centre of cluster
-RA=mean(X);Dec=mean(Y);      %Cluster's centre RA and DEC
-
 %normal distribution of stars based on proper motion
 surf(x1,x2,F);title('predicted distribution function of stars according to proper motion');ylabel('pmRA');xlabel('pmDEC');figure;  
 
