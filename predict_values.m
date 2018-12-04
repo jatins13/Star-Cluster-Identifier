@@ -14,7 +14,7 @@ function final_Y=predict_values(X,Y)
     end
     [Z_train,~]=pca(X_train,1);
     [Z_test,~]=pca(X_test,1);
-    mdl=fitlm(Z_train,Y_train,'linear');
+    mdl=fitlm(Z_train,Y_train,'linear');display(mdl);
     predict_Y=predict(mdl,Z_test);
     final_Y=[Y_train ;predict_Y];
 end
